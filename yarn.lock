@@ -1333,6 +1333,13 @@
     wcwidth "^1.0.1"
     ws "^1.1.0"
 
+"@stream-io/flat-list-mvcp@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@stream-io/flat-list-mvcp/-/flat-list-mvcp-0.0.9.tgz#8dad59a93766376a7745deb4a45e50cf0c012a65"
+  integrity sha512-tj9Y7bDlFqdiy4girVlvo1Euc0uiYHCQ2vhOjo1B+ChfGC3b5DBDu51OMJDKJyD+U9NP5F/XnV7tcr3k4aDjgg==
+  dependencies:
+    lodash.debounce "^4.0.8"
+
 "@types/babel__core@^7.1.0", "@types/babel__core@^7.1.7":
   version "7.1.7"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.7.tgz#1dacad8840364a57c98d0dd4855c6dd3752c6b89"
@@ -4779,6 +4786,11 @@ locate-path@^5.0.0:
   integrity sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==
   dependencies:
     p-locate "^4.1.0"
+
+lodash.debounce@^4.0.8:
+  version "4.0.8"
+  resolved "https://registry.yarnpkg.com/lodash.debounce/-/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
+  integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
 lodash.sortby@^4.7.0:
   version "4.7.0"

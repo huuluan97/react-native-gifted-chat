@@ -2,7 +2,6 @@ import PropTypes from 'prop-types'
 import React, { RefObject } from 'react'
 
 import {
-  FlatList,
   View,
   StyleSheet,
   TouchableOpacity,
@@ -15,6 +14,7 @@ import {
   ViewStyle,
   Platform,
 } from 'react-native'
+import { FlatList } from '@stream-io/flat-list-mvcp'
 
 import LoadEarlier from './LoadEarlier'
 import Message from './Message'
@@ -87,6 +87,7 @@ export interface MessageContainerProps<TMessage extends IMessage> {
   onQuickReply?(replies: Reply[]): void
   infiniteScroll?: boolean
   isLoadingEarlier?: boolean
+  maintainVisibleContentPosition?: any
 }
 
 interface State {
@@ -365,6 +366,9 @@ export default class MessageContainer<
           onEndReached={this.onEndReached}
           onEndReachedThreshold={0.1}
           {...this.props.listViewProps}
+          maintainVisibleContentPosition={
+            this.props.maintainVisibleContentPosition
+          }
         />
       </View>
     )
